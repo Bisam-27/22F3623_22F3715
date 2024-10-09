@@ -1,4 +1,4 @@
-package library;
+package Library;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,11 @@ public class Library
     {
         System.out.println("Books in library: " + books);
     }
+    
+    public boolean searchBook(String bookName)
+    {
+    	return books.contains(bookName);
+    }
 
     public static void main(String[] args)
     {
@@ -26,4 +31,5 @@ public class Library
         myLibrary.listBooks();
     }
 }
+
 
